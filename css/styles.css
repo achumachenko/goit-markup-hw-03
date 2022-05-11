@@ -59,7 +59,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ====== Навигация ====== */
-
+.page-header{
+    background-color: aqua;
+    
+}
 
 .nav-menu-link,
 .contacts-header-link {
@@ -67,9 +70,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     line-height: 1.14;    
     letter-spacing: 0.02em;
+   
 }
 .nav-menu-link{
     color: var(--nav-menu-link-color);
+}
+
+.contacts-header,
+.nav-menu{
+    margin: 0;
 }
 .contacts-header-link{
     color: inherit; 
@@ -91,16 +100,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero{
     background: var(--hero-background);
+    text-align: center;
     
+    outline: tomato;
+    margin-bottom: 94px;
 }
 .main-title{
     font-weight: 900;
     font-size: 44px;
     line-height:1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-title-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+    background-color: tomato;
 }
 .hero-button{
     font-family: var(--main-font);
@@ -111,12 +126,24 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--hero-button-color);
     background: var(--hero-button-background);
     cursor: pointer;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
   
 }
 
 /* =========== Особенности ========= */
+.merit{
+    background-color: rosybrown;
+    margin-bottom: 94px;
+}
+.merit-items{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .merit-title{
-   
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -125,7 +152,8 @@ h1, h2, h3, h4, h5, h6 {
    
 }
 .merit-text{
-    
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -133,7 +161,8 @@ h1, h2, h3, h4, h5, h6 {
 /* =========== Чем мы занимаемся ========= */
 
 .product-title{
-    
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -205,6 +234,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     background: var(--filter-btn-background);
     border-radius: 4px;
+    padding: 6px 22px;
 }
 .filter-btn-active{
     font-family: inherit;
@@ -218,6 +248,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     background: var(--accent-color);
     color: var(--filter-btn-focus-color);
+    padding: 6px 22px;
 }
 .filter-btn:hover,
 .filter-btn:focus{
