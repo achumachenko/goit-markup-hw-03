@@ -160,9 +160,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* =========== Чем мы занимаемся ========= */
 
-.product-title{
+.product{
+    background-color: aqua;
+    margin-bottom: 94px;
+}
+.product ul {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.product-title{
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -173,24 +182,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .our_team{
     background: var(--our_team-background);
+    outline: 2px solid tomato;
+    padding: 94px 215px;
 }
 .team{
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+.team-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .user-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;    
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .user-position{
-    
+    margin-top: 0;
+    margin-bottom: 0;
   
     font-size: 16px;
     line-height: 1.18;    
@@ -201,22 +220,33 @@ h1, h2, h3, h4, h5, h6 {
 /* =========== Footer======== */
 .page-footer{
     background: var(--page-footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.page-footer ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .address-text{
-  
+    margin-top: 20px;
+    margin-bottom: 0;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--address-text-color);
 }
+
 .contacts-footer-link{
+    display: inline-block;
+    margin-top: 9px;
     font-family: var(--main-font);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--contacts-footer-link-color);
+ 
 }
 
 /* ================ Portfolio =================== */
