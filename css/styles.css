@@ -25,16 +25,17 @@
     --filter-btn-background: #F5F4FA;
     --filter-btn-focus-color: #FFFFFF;
 }
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 body{
     font-family:var(--main-font);
     color: var(--text-color);
     font-size: 14px;
     background-color: var(--background-body);
+    width: 1600px;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+    padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
     color: var(--title-color);
@@ -45,6 +46,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .link {
     text-decoration: none;
+}
+.list{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1200px;
+    /* background-color: tomato; */
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: solid 2px tomato ; */
 }
 
 /* ======== логотип ======== */
@@ -57,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
     color: var(--logo-color);
     text-decoration: none;
-    
+  
     
 }
 
@@ -69,18 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ====== Навигация ====== */
-.page-header{
-    /* background-color: aqua; */
-    width: 1600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.main-nav{
+   display: flex;
+   align-items: center;
+   
 }
 .header-nav{
     display: flex;
     align-items: center;
-    margin-left: 215px;
+    
 }
 .nav-menu-link,
 .contacts-header-link {
@@ -90,32 +99,30 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.02em;
    
 }
-.nav-menu-item, .contacts-header-item{
-    margin-right: 50px;
+.nav-menu-item+ .item, .contacts-header-item+ .item{
+    margin-left: 50px;
 }
 .nav-menu-link{
+    display: block;
     color: var(--nav-menu-link-color);
-    
+    padding-top: 32px;
+    padding-bottom: 32px;   
 
 }
 .nav-menu {
-    display: flex;
+    display: flex;    
     margin-left: 93px;
-    margin-top: 32px ;
-    margin-bottom: 32px;
     
 }
-.contacts-header
-{
-    display: flex;
-    margin-right: 215px;
-    
+.contacts-header{
+display: flex;
+margin-left: auto;
+
 }
-.contacts-header-item{
-  
-}
+
 .contacts-header-link{
-    color: inherit; 
+    color: inherit;
+     
 }
 
 .nav-menu-link:hover,
@@ -133,10 +140,11 @@ h1, h2, h3, h4, h5, h6 {
 /* ====== Hero =====*/
 
 .hero{
+    min-height: 600px;
     background: var(--hero-background);
     text-align: center;
-    
-    outline: tomato;
+   
+    /* outline: solid 4px  tomato; */
     margin-bottom: 94px;
     
 }
@@ -144,13 +152,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     font-size: 44px;
     line-height:1.36;
-    
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-title-color);
     margin-top: 0;
     margin-bottom: 30px;
-    background-color: tomato;
+    
 }
 .hero-button{
     font-family: var(--main-font);
@@ -169,13 +177,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =========== Особенности ========= */
 .merit{
-    background-color: rosybrown;
+    
     margin-bottom: 94px;
 }
 .merit-items{
-    margin-top: 0;
-    margin-bottom: 0;
+    display: flex;    
+   
 }
+.merit-item{
+    margin-right: 30px;
+    width: 270px;
+}
+.merit-item:last-child{
+    margin-right: 0;
+}
+
 .merit-title{
     margin-top: 0;
     margin-bottom: 10px;
@@ -196,15 +212,11 @@ h1, h2, h3, h4, h5, h6 {
 /* =========== Чем мы занимаемся ========= */
 
 .product{
-    background-color: aqua;
+   
     margin-bottom: 94px;
 }
-.product ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+.product-title {
 
-.product-title{
     margin-top: 0;
     margin-bottom: 50px;
     font-weight: 700;
@@ -213,15 +225,27 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     letter-spacing: 0.03em;
 }
+.product ul {
+    display: flex;
+}
+
+.product-item+ .item{
+    margin-left: 30px;
+}
+
+
 /* =========== Наша команда ========== */
 
 .our_team{
     background: var(--our_team-background);
-    outline: 2px solid tomato;
-    padding: 94px 215px;
+    /* outline: 2px solid tomato; */
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
 }
 .team{
-    margin-top: 0;
+    
+   
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -230,8 +254,18 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
 }
 .team-list{
-    margin-top: 0;
-    margin-bottom: 0;
+    display: flex;
+   margin: 0;
+   padding: 0;
+}
+.team-item+ .item{
+    margin-left: 30px;
+}
+.team-item{
+    background: #FFFFFF;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .user-name{
     font-weight: 500;
@@ -239,12 +273,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.18;    
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .user-position{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   
     font-size: 16px;
     line-height: 1.18;    
@@ -258,23 +292,30 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-logo{
+    display: block;
+    margin-bottom: 20px;
+}
 .page-footer ul {
     margin-top: 0;
     margin-bottom: 0;
 }
 .address-text{
-    margin-top: 20px;
-    margin-bottom: 0;
+    
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--address-text-color);
 }
+.contacts-footer-item{
+    
+    margin-top: 9px;
+}
 
 .contacts-footer-link{
-    display: inline-block;
-    margin-top: 9px;
+   
+    
     font-family: var(--main-font);
     font-style: normal;
     font-size: 14px;
