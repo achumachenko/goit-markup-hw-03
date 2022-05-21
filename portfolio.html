@@ -23,8 +23,8 @@
             <nav class="header-nav">
                 <a class="logo" href="./index.html" lang="en">Web<span class="logo-theme-light">Studio</span></a>
                 <ul class="nav-menu list">
-                    <li class="nav-menu-item item"><a href="./index.html" class="nav-menu-link link active">Студия</a></li>
-                    <li class="nav-menu-item item"><a href="portfolio.html" class="nav-menu-link link">Портфолио</a></li>
+                    <li class="nav-menu-item item"><a href="./index.html" class="nav-menu-link link ">Студия</a></li>
+                    <li class="nav-menu-item item"><a href="portfolio.html" class="nav-menu-link link active">Портфолио</a></li>
                     <li class="nav-menu-item item"><a href="#" class="nav-menu-link link">Контакты</a></li>
                 </ul>
             </nav>
@@ -39,8 +39,9 @@
     </header>
     <!-- Контент -->
    <main>
-        <section class="portfolio">
-            <h1 class="portfolio-title" hidden>Пример работ</h1>
+        <section class="portfolio section">
+            <div class="container">
+                <h1 class="portfolio-title" hidden>Пример работ</h1>
             <ul class="portfolio-filter">
                 <li class="item"> <button type="button" class="filter-btn-active">Все</button></li>
                 <li class="item"> <button type="button" class="filter-btn">Веб-сайты</button></li>
@@ -50,52 +51,80 @@
             </ul> 
             <ul class="photos">
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img1.jpg" alt="страница сайта с фотографиями" width="370" >
-                    <h2 class="photos-title">Технокряк</h3>
-                    <p class="photos-text">Веб-сайт</p></li>
+                    <div class="border-item">
+                        <h2 class="photos-title">Технокряк</h2>
+                        <p class="photos-text">Веб-сайт</p>
+                    </div>
+                </li>
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img2.jpg" alt="баскетболисты в борьбе" width="370">
-                    <h2 class="photos-title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                    <p class="photos-text">Дизайн</p></li>
+                    <div class="border-item">
+                        <h2 class="photos-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                        <p class="photos-text">Дизайн</p>
+                    </div>
+                </li>
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img3.jpg" alt="эмблема ресторана в виде рыбы" width="370">
-                    <h2 class="photos-title">Ресторан <span lang="en">Seafood</span></h3>
-                    <p class="photos-text">Приложение</p></li>
+                    <div class="border-item">
+                        <h2 class="photos-title">Ресторан <span lang="en">Seafood</span></h2>
+                        <p class="photos-text">Приложение</p>
+                    </div>
+                </li>
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img4.jpg" alt="наушники" width="370">
-                    <h2 class="photos-title">Проект <span lang="en">Prime</span></h3>
-                    <p class="photos-text">Маркетинг</p></li>
+                    <div class="border-item">
+                        <h2 class="photos-title">Проект <span lang="en">Prime</span></h2>
+                        <p class="photos-text">Маркетинг</p>
+                    </div>
+                </li>
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img5.jpg" alt="две разные коробки" width="370">
-                    <h2 class="photos-title ">Проект <span lang="en">Boxes</span></h3>
-                    <p class="photos-text">Приложение</p>
+                    <div class="border-item">
+                        <h2 class="photos-title ">Проект <span lang="en">Boxes</span></h2>
+                        <p class="photos-text">Приложение</p>
+                    </div>
                 </li>
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img6.jpg" alt="главнвя страница сайта" width="370">
-                    <h2 class="photos-title" lang="en">Inspiration has no Borders</h3>
-                    <p class="photos-text">Веб-сайт</p>
+                    <div class="border-item">
+                        <h2 class="photos-title" lang="en">Inspiration has no Borders</h2>
+                        <p class="photos-text">Веб-сайт</p>
+                    </div>
                 </li>
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img7.jpg" alt="открытая книга" width="370">
-                    <h2 class="photos-title">Издание <span lang="en">Limited Edition</span></h3>
-                    <p class="photos-text">Дизайн</p>
+                    <div class="border-item">
+                        <h2 class="photos-title">Издание <span lang="en">Limited Edition</span></h2>
+                        <p class="photos-text">Дизайн</p>
+                    </div>
+                    
                 </li>
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img8.jpg" alt="этикетка, бирка" width="370">
-                    <h2 class="photos-title">Проект <span lang="en">LAB</span></h3>
-                    <p class="photos-text">Маркетинг</p>
+                    <div class="border-item">
+                        <h2 class="photos-title">Проект <span lang="en">LAB</span></h2>
+                        <p class="photos-text">Маркетинг</p>
+                    </div>
                 </li>
                 <li class="photos-item item"><img class="photo-img" src="./images/img-portfolio/img9.jpg" alt="приложение Growing Business" width="370">
-                    <h2 class="photos-title" lang="en">Growing Business</h3>
-                    <p class="photos-text">Приложение</p>
+                    <div class="border-item">
+                        <h2 class="photos-title" lang="en">Growing Business</h2>
+                        <p class="photos-text">Приложение</p>
+                    </div>
+                   
                 </li>
             </ul>
+            </div>
+            
         </section>
    </main> 
     <!-- Footer -->
     <footer class="page-footer">
-        <a class="logo" href="./index.html" lang="en">Web<span class="logo-theme-dark">Studio</span></a>
-        <address>
-            <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
-                <li class="contacts-footer-item item"><a href="#" class="contacts-footer-link link">info@example.com</a>
-                </li>
-                <li class="contacts-footer-item item"><a href="#" class="contacts-footer-link link">+38 099 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="logo footer-logo" href="./index.html" lang="en">Web<span class="logo-theme-dark">Studio</span></a>
+            <address>
+                <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="list">
+                    <li class="contacts-footer-item item"><a href="#" class="contacts-footer-link link">info@example.com</a>
+                    </li>
+                    <li class="contacts-footer-item item"><a href="#" class="contacts-footer-link link">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+    
     </footer>
 </body>
 </html>

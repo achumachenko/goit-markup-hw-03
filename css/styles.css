@@ -34,7 +34,11 @@ body{
     width: 1600px;
 }
 h1,h2,h3,h4,h5,h6,p,ul{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+ul{
     padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -54,9 +58,18 @@ h1, h2, h3, h4, h5, h6 {
 .container{
     width: 1200px;
     /* background-color: tomato; */
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
     /* outline: solid 2px tomato ; */
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section:nth-child(3){
+    padding-top: 0;
 }
 
 /* ======== логотип ======== */
@@ -81,6 +94,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ====== Навигация ====== */
+.page-header{
+    border: 1px solid #ECECEC
+}
 .main-nav{
    display: flex;
    align-items: center;
@@ -140,15 +156,16 @@ margin-left: auto;
 /* ====== Hero =====*/
 
 .hero{
-    min-height: 600px;
+    /* min-height: 600px; */
     background: var(--hero-background);
     text-align: center;
    
     /* outline: solid 4px  tomato; */
-    margin-bottom: 94px;
+   
     
 }
 .main-title{
+    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height:1.36;
@@ -176,10 +193,7 @@ margin-left: auto;
 }
 
 /* =========== Особенности ========= */
-.merit{
-    
-    margin-bottom: 94px;
-}
+ 
 .merit-items{
     display: flex;    
    
@@ -211,10 +225,7 @@ margin-left: auto;
 }
 /* =========== Чем мы занимаемся ========= */
 
-.product{
-   
-    margin-bottom: 94px;
-}
+
 .product-title {
 
     margin-top: 0;
@@ -239,8 +250,7 @@ margin-left: auto;
 .our_team{
     background: var(--our_team-background);
     /* outline: 2px solid tomato; */
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
     
 }
 .team{
@@ -288,20 +298,17 @@ margin-left: auto;
 }
 /* =========== Footer======== */
 .page-footer{
+   
     background: var(--page-footer-background);
+   
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-logo{
-    display: block;
-    margin-bottom: 20px;
-}
-.page-footer ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+
+
 .address-text{
-    
+ 
+    margin-top: 20px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -312,6 +319,7 @@ margin-left: auto;
     
     margin-top: 9px;
 }
+
 
 .contacts-footer-link{
    
@@ -328,6 +336,11 @@ margin-left: auto;
 /* ================ Portfolio =================== */
 
 
+.portfolio-filter{
+    display: flex;
+    justify-content: center;
+}
+
 .filter-btn{
     font-family: inherit;
     font-style: normal;
@@ -341,7 +354,11 @@ margin-left: auto;
     background: var(--filter-btn-background);
     border-radius: 4px;
     padding: 6px 22px;
+    border-color:#ffffff;
+    border-width:0;
+    margin-right: 8px;
 }
+
 .filter-btn-active{
     font-family: inherit;
     font-style: normal;
@@ -355,6 +372,8 @@ margin-left: auto;
     background: var(--accent-color);
     color: var(--filter-btn-focus-color);
     padding: 6px 22px;
+    border-width: 0;
+    margin-right: 8px;
 }
 .filter-btn:hover,
 .filter-btn:focus{
@@ -364,16 +383,46 @@ margin-left: auto;
 
 /* ========= photos ========= */
 
-.photos-title{
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 34px;
+}
+
+.photos-item{
+    margin-right: 30px;
+    margin-bottom: 30px;
     
+   
+}
+.photo-img{
+    display: block;
+}
+.photos-item:nth-child(3n + 3){
+    margin-right: 0px;
+}
+.photos-item:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
+.photos-title{
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-top: 20px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    
+    
 }
 .photos-text{
     
     font-size: 16px;
     line-height: 1.9;  
     letter-spacing: 0.03em;
+   
+}
+.border-item{
+    border: 1px solid #EEEEEE;
+    border-top-width:0px;
 }
