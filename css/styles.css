@@ -95,7 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ====== Навигация ====== */
 .page-header{
-    border: 1px solid #ECECEC
+    border: 0px solid #ECECEC;
+    border-bottom-width: 1px;
 }
 .main-nav{
    display: flex;
