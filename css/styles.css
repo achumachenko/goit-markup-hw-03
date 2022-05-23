@@ -420,9 +420,9 @@ margin-left: auto;
     
    
 }
-.photo-img{
+/* .photo-img{
     display: block;
-}
+} */
 .photos-item:nth-child(3n + 3){
     margin-right: 0px;
 }
@@ -448,6 +448,6 @@ margin-left: auto;
    
 }
 .border-item{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
+    padding: 20px 0 20px 20px;
 }
